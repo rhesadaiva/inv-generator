@@ -31,9 +31,23 @@ const UploadForm = () => {
         }
     };
 
+    const downloadAllData = () => {
+        let dataTxt = dataTable.map(items => {
+            let url = `https://rhesa-oriettha.vercel.app/?to=${encodeURIComponent(items.nama)}`;
+            return generateMessageOnly(url)
+        });
+
+        const element = document.createElement("a");
+        const file = new Blob(dataTxt,{type:"text/plain"});
+
+        element.href = URL.createObjectURL(file);
+        element.download = "undangan.txt";
+        document.body.appendChild(element);
+        element.click();
+    }
 
     const generateMessageOnly = (url) => {
-        return `Shalom, salam sejahtera untuk kita semua.\n\nTanpa mengurangi rasa hormat, melalui media ini, izinkan kami mengundang Bapak/Ibu/Saudara/i/teman-teman sekalian, untuk berkenan hadir dalam acara Pemberkatan Pernikahan & Adat/Resepsi kami;\n\nrincian acara:\n${url}\n\nKami memohon maaf karena keterbatasan jarak dan waktu, tidak dapat mengirimkan undangan ini secara langsung.\n\nAtas kehadiran dan doa restunya, kami beserta keluarga menyampaikan terimakasih. \nKiranya Tuhan memberkati kita semua. \n\nKami yang berbahagia,\nRhesa & Oriettha`
+        return `Salam sejahtera untuk kita semua. Semoga kita dalam keadaan sehat.\n\nTanpa mengurangi rasa hormat, melalui media ini, izinkan kami mengundang Bapak/Ibu/Saudara/i/teman-teman sekalian, untuk berkenan hadir dalam acara Pemberkatan Pernikahan & Adat/Resepsi kami:\n\n*rincian acara*:\n${url}\n\nKami memohon maaf karena keterbatasan jarak dan waktu, tidak dapat mengirimkan undangan ini secara langsung.\n\nAtas kehadiran dan doa restunya, kami beserta keluarga menyampaikan terima kasih. \nKiranya Tuhan memberkati kita semua. \n\nKami yang berbahagia,\n*Rhesa & Oriettha*\n\n\n\n`
     }
 
     const handleResetData = () => {
@@ -119,6 +133,8 @@ const UploadForm = () => {
             <div>
                 <Button color="primary" onClick={handleFileUpload}>Upload</Button>
                 <Button color="danger" onClick={handleResetData} style={{marginLeft:"5px"}}>Reset</Button>
+                {/* <Button color="info" onClick={downloadAllData} style={{marginLeft:"5px"}}>Reset</Button> */}
+                {dataTable.length > 0 ? <Button color="info" onClick={downloadAllData} style={{marginLeft:"5px"}}>Dowload Undangan (txt)</Button> : null}
             </div>
             {fileInfo()}
         </div>
