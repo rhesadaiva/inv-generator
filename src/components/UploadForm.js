@@ -134,7 +134,7 @@ const UploadForm = () => {
                 <Button color="primary" onClick={handleFileUpload}>Upload</Button>
                 <Button color="danger" onClick={handleResetData} style={{marginLeft:"5px"}}>Reset</Button>
                 {/* <Button color="info" onClick={downloadAllData} style={{marginLeft:"5px"}}>Reset</Button> */}
-                {dataTable.length > 0 ? <Button color="info" onClick={downloadAllData} style={{marginLeft:"5px"}}>Dowload Undangan (txt)</Button> : null}
+                {dataTable.length > 0 ? <Button color="info" onClick={downloadAllData} style={{marginLeft:"5px"}}>Download Undangan</Button> : null}
             </div>
             {fileInfo()}
         </div>
