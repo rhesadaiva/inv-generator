@@ -34,7 +34,10 @@ const UploadForm = () => {
     const downloadAllData = () => {
         let dataTxt = dataTable.map(items => {
             let url = `https://rhesa-oriettha.vercel.app/?to=${encodeURIComponent(items.nama)}`;
-            return generateMessageOnly(url)
+            let message =  generateMessageOnly(url);
+
+            return `${items.nama}\n\n${message}`;
+
         });
 
         const element = document.createElement("a");
