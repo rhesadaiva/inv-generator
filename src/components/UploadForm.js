@@ -88,8 +88,8 @@ const UploadForm = () => {
                             <td>{items.no_hp}</td>
                             <td>{url}</td>
                             <td className="text-center">
-                                <Button size="sm" style={{marginRight:"10px"}} color="success" onClick={() => {navigator.clipboard.writeText(url)}}>Url Undangan</Button>
-                                <Button size="sm" style={{marginRight:"10px"}} color="primary" onClick={() => {window.open(whatsappUrlCreator(items.no_hp, url),'_blank')}}>Url Whatsapp</Button>
+                                <Button size="sm" style={{marginRight:"5px"}} color="success" onClick={() => {navigator.clipboard.writeText(url)}}>Url Undangan</Button>
+                                <Button size="sm" style={{marginRight:"5px"}} color="primary" onClick={() => {window.open(whatsappUrlCreator(items.no_hp, url),'_blank')}}>Url Whatsapp</Button>
                                 <Button size="sm" color="info" onClick={() => {navigator.clipboard.writeText(generateMessageOnly(url))}}>Pesan Whatsapp</Button>
                             </td>
                             {/* <td>{url}</td> */}
