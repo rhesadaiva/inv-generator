@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "//rhesadaiva.github.io/inv-generator/static/css/main.1a8a0596.css",
-    "main.js": "//rhesadaiva.github.io/inv-generator/static/js/main.92d56b6c.js",
-    "index.html": "//rhesadaiva.github.io/inv-generator/index.html",
-    "main.1a8a0596.css.map": "//rhesadaiva.github.io/inv-generator/static/css/main.1a8a0596.css.map",
-    "main.92d56b6c.js.map": "//rhesadaiva.github.io/inv-generator/static/js/main.92d56b6c.js.map"
+    "main.css": "/inv-generator/static/css/main.1a8a0596.css",
+    "main.js": "/inv-generator/static/js/main.92d56b6c.js",
+    "index.html": "/inv-generator/index.html",
+    "main.1a8a0596.css.map": "/inv-generator/static/css/main.1a8a0596.css.map",
+    "main.92d56b6c.js.map": "/inv-generator/static/js/main.92d56b6c.js.map"
   },
   "entrypoints": [
     "static/css/main.1a8a0596.css",
