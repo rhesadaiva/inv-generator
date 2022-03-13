@@ -78,8 +78,8 @@ const UploadForm = () => {
                     {dataTable.map((items, key) => {
 
 
-                    //    let url = `https://rhesa-oriettha.vercel.app/?to=${encodeURIComponent(items.nama)}`;
-                       let url = `https://rhesa-oriettha.vercel.app/?to=${items.nama.replace(/\s/g,"+")}`;
+                       let url = `https://rhesa-oriettha.vercel.app/?to=${encodeURIComponent(items.nama)}`;
+                    //    let url = `https://rhesa-oriettha.vercel.app/?to=${items.nama.replace(/\s/g,"+")}`;
 
                        return (    
                         <tr key={key + 1}>
