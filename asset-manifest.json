@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/inv-generator/static/css/main.1a8a0596.css",
-    "main.js": "/inv-generator/static/js/main.18f37a4f.js",
+    "main.js": "/inv-generator/static/js/main.0e9db7f0.js",
     "index.html": "/inv-generator/index.html",
     "main.1a8a0596.css.map": "/inv-generator/static/css/main.1a8a0596.css.map",
-    "main.18f37a4f.js.map": "/inv-generator/static/js/main.18f37a4f.js.map"
+    "main.0e9db7f0.js.map": "/inv-generator/static/js/main.0e9db7f0.js.map"
   },
   "entrypoints": [
     "static/css/main.1a8a0596.css",
-    "static/js/main.18f37a4f.js"
+    "static/js/main.0e9db7f0.js"
   ]
 }
